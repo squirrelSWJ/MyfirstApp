@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/blank_10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menubg"
+            android:padding="@dimen/blank_10"
+            android:text="메뉴" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/blank_10"
+            android:text="멀티앱" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menubg"
+            android:padding="@dimen/blank_10"
+            android:text="설정" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/blank_2"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@color/a81a1e" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btn_anumobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/mainbox"
+                android:gravity="center"
+                android:text="안동대학교\n모바일페이지"
+                android:textColor="@color/bluetitle"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/btn_movie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/aroundbox"
+                    android:gravity="center"
+                    android:text="영화순위"
+                    android:textColor="@color/dark_green"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btn_weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/aroundbox"
+                    android:gravity="center"
+                    android:text="날씨정보"
+                    android:textColor="@color/darkgray"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/btn_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/aroundbox"
+                    android:gravity="center"
+                    android:text="학과연락처"
+                    android:textColor="@color/dark_green"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btn_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/aroundbox"
+                    android:gravity="center"
+                    android:text="찾아오는길"
+                    android:textColor="@color/darkgray"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_webtoon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/mainbox"
+                android:gravity="center"
+                android:text="웹툰보기"
+                android:textColor="@color/bluetitle"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/blank_50"
+            >
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="공지사항"
+                android:gravity="center"
+                android:textColor="@color/a81a1e"
+                />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

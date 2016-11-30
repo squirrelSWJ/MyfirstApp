@@ -46,7 +46,7 @@ public class ActMain extends Activity implements OnClickListener{
 		btn_map.setOnClickListener(this);
 		btn_webtoon.setOnClickListener(this);
 	}
-
+	
 	@Override
 	public void onClick(View v) {//버튼들을 눌렀을때 그 View 를 가져온다
 		// TODO Auto-generated method stub

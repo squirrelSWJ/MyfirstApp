@@ -44,9 +44,82 @@
         android:scaleType="fitXY"
         android:src="@color/a81a1e" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="메롱" />
-	
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/blank_10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/blank_5"
+             >
+            
+            <TextView
+                android:id="@+id/btn_naver"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#3eaf0e"
+                android:text="네이버 웹툰"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" 
+                android:layout_marginRight="@dimen/blank_5"
+                />
+
+            <TextView
+                android:id="@+id/btn_daum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5e8efc"
+                android:text="다음 웹툰"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/blank_5"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" 
+            android:layout_marginTop="@dimen/blank_5"
+            >
+
+            <TextView
+                android:id="@+id/btn_Lezhin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:text="레진 코믹스"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/blank_5"
+                 />
+
+            <TextView
+                android:id="@+id/btn_nate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF4848"
+                android:text="네이트 판"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/blank_5"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
 </LinearLayout>

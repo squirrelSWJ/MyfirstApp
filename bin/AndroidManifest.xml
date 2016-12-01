@@ -31,7 +31,10 @@
             android:name=".ActWebview"
             android:label="@string/app_name" >
         </activity>
-        
+        <activity
+            android:name=".ActMovie"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

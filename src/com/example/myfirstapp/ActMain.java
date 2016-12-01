@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class ActMain extends Activity implements OnClickListener{
@@ -19,7 +20,7 @@ public class ActMain extends Activity implements OnClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_main);
-
+		
 		setLayout();
 	}
 
@@ -45,6 +46,7 @@ public class ActMain extends Activity implements OnClickListener{
 		btn_tel.setOnClickListener(this);
 		btn_map.setOnClickListener(this);
 		btn_webtoon.setOnClickListener(this);
+		
 	}
 	
 	@Override
@@ -64,7 +66,9 @@ public class ActMain extends Activity implements OnClickListener{
 			startActivity(intent_mobile);
 			break;
 		case R.id.btn_movie:
-
+			Intent intent_movie = new Intent(ActMain.this,ActMovie.class);
+			intent_movie.putExtra("title", "최신영화순위");
+			startActivity(intent_movie);
 			break;
 		case R.id.btn_weather:
 
